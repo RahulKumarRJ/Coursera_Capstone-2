@@ -1,6 +1,6 @@
 # Relocating to Another City: Where Could Be My Next Hometown?
-Thinh Nguyen-Vo
-School of Interactive Arts + Technology, Simon Fraser University, BC, Canada
+Thinh Nguyen-Vo  
+School of Interactive Arts + Technology, Simon Fraser University, BC, Canada  
 tnguyenv@sfu.ca
 
 
