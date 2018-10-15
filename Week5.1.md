@@ -11,7 +11,7 @@ For several reasons, especially business, many people have to relocate. Most of 
 
 # I. Introduction
 
-Relocation has never been an easy decision for anyone. It usually takes time for researching with unstructured information on the Internet. Thanks to advancements in data science, many models and libraries are now available for building such systems that can help people shorten and prioritize the list of neighbourhoods of interest, hence reduce the task load and increase the efficiency. 
+Relocation has never been an easy decision for anyone. It usually takes time for researching with unstructured information on the Internet. Thanks to advancements in data science, many models and libraries are now available for building such systems that can help people shorten and prioritize the list of neighbourhoods of interest, hence reduce the task load and increase the efficiency.
 
 In order to illustrate the problem, we will take a specific case as an example: Andy has lived in Vancouver for 25 years of his life, currently, he graduated from his grad school and looked for a data scientist position. He finally got an offer, however, the company bases in Toronto. He decided to relocate to Toronto for something new. The question here is that where exactly he could live in that big city.
 
@@ -76,8 +76,7 @@ One can see, the distribution of venues over categories of each neighbourhood is
 
 To achieve a deeper insight into the data, I also get some descriptive statistics about the different categories of venue here.
 
-
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_1454ED3EC8D03710AF713D45EEDCB5FE310EE2ED7C7A5681FCBCA5FCEAF5E005_1539533923026_Screen+Shot+2018-10-14+at+8.33.31+AM.png)
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_1454ED3EC8D03710AF713D45EEDCB5FE310EE2ED7C7A5681FCBCA5FCEAF5E005_1539540065320_Screen+Shot+2018-10-14+at+11.00.40+AM.png)
 
 
 We can see that the range of **number of venues** are really different between neighbourhoods. For example, the third line shows descriptive statistics of the Food category, while some neighbourhood has 57 venues (the last column), some has merely 1 (the fifth to last column).
@@ -150,7 +149,7 @@ Interestingly, these neighbourhoods in Toronto are also around (or close to) the
 ![Neighbourhoods in Cluster #6 of Toronto](https://d2mxuefqeaa7sj.cloudfront.net/s_1454ED3EC8D03710AF713D45EEDCB5FE310EE2ED7C7A5681FCBCA5FCEAF5E005_1539537046116_cluster6.png)
 
 
-Honestly, I would say the histograms are really close to each other though there are still minor differences, e.g., there is no travel and transport venues in downtown Vancouver (which is not very true) while there are some in cluster #6. I believe this result is fairly useful and can be used (at least) for reference purpose. 
+Honestly, I would say the histograms are really close to each other though there are still minor differences, e.g., there is no travel and transport venues in downtown Vancouver (which is not very true) while there are some in cluster #6. I believe this result is fairly useful and can be used (at least) for reference purpose.
 
 
 # V. Discussion
@@ -169,4 +168,3 @@ Thanks to the availability of FourSquare APIs, we can easily retrieve the inform
 In this project, to illustrate the model, we used data of more than 100 neighbourhoods in Toronto as the target city to train the clustering model; and data of downtown Vancouver as the original hometown. Results suggested that only KMeans is robust for this particular problem. A KMeans model clustered Toronto’s neighbourhoods into K=10 clusters and predicted the downtown Vancouver is most likely to belong to cluster #6, which includes other 16 neighbourhoods (showed in above section).
 
 After reflecting the result on geographical map as well as histograms of venue distribution over categories, we believe that the recommendation is fairly appropriate with likely geo-social meaning and similar distribution of venues. This model helped Andy in this example to reduce the number of potential target neighbourhoods by 85% from 103 to 16 neighbourhoods. More experiments might be needed for more solid conclusion, however, here we would conclude that KMeans might be an appropriate algorithm for clustering neighbourhoods data of venue-category histograms.
-
